@@ -13,7 +13,7 @@ const Home = () => {
       if (response.ok) dispatch({type: 'SET_WORKOUTS', payload: json})
     }
     fetchWorkouts()
-  }, [])
+  }, [dispatch])
 
   return (
     <div className='home'>
